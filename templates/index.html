@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="stylesheet" href="/static/bootstrap.min.css" />
+    <title>Cupcakes</title>
+  </head>
+  <body class="container">
+    <h1 class="display-1 text-center">All Cupcakes</h1>
+    <ul id="cupcakes-list" class="row d-flex justify-content-center"></ul>
+    <h2 class="display-3 text-center">Add a New Cupcake</h2>
+    <form id="cupcake-form">
+      <div class="d-flex justify-content-center my-2">
+        <label for="flavor">Flavor</label>
+        <input type="text" name="flavor" id="flavor" />
+      </div>
+      <div class="d-flex justify-content-center my-2">
+        <label for="size">Size</label>
+        <input type="text" name="size" id="size" />
+      </div>
+      <div class="d-flex justify-content-center my-2">
+        <label for="rating">Rating</label>
+        <input type="range" name="rating" min="0" max="10" id="rating" />
+      </div>
+      <div class="d-flex justify-content-center my-2">
+        <label for="image">Image</label>
+        <input type="text" name="image" id="image" />
+      </div>
+      <div class="d-flex justify-content-center my-4">
+        <button class="btn btn-success">Add Cupcake</button>
+      </div>
+    </form>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/cupcakes.js"></script>
+  </body>
+</html>
